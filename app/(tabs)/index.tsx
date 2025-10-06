@@ -1,3 +1,4 @@
+import SearchBar from "@/components/SearchBar";
 import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { Image, ScrollView, Text, View } from "react-native";
@@ -21,6 +22,10 @@ export default function Index() {
           source={icons.logo}
           className="w-12 h-10 mt-20 mb-5 mx-auto"
         />
+
+        <View className="flex-1 mt-5">
+          <SearchBar />
+        </View>
       </ScrollView>
     </View>
   );
